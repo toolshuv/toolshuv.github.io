@@ -1,0 +1,288 @@
+<!doctype html>
+<html> 
+ <head> 
+   <meta name="description" content="Find the perfect name for your baby with our user-friendly baby names generator tool. Search through thousands of names, meanings, and origins to find the perfect fit. Start your search today!">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Itim&amp;family=Josefin+Sans:wght@500&amp;display=swap" rel="stylesheet"> 
+  <title>Baby Names Generator</title> 
+ <style type="text/css" id="dcoder_stylesheet">nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+   font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .dropdown {
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+//nev end
+ body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  padding: 20px;
+}
+
+form {
+  margin: 20px;
+}
+
+#result {
+  margin-top: 50px;
+  box-shadow: 0px 0px 20px  #bfbfbf ;
+  text-align:center;
+  height:5vh;
+  border-radius : 4px;
+  margin: 20px;
+  font-size: 2vh;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.mn {box-shadow: 0px 0px 30px #808080;
+  height: 30vh;
+width:30vh;
+   padding:20px;
+  margin-top: 25px;
+  position:relative;
+left:20%;
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+   display: inline-block;
+   border-radius: 4px;
+  align-items:center;}
+  
+  #country{
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+display:flex;
+align-items: center;
+margin-left : 110px;
+margin-top:20px;
+       height:70px;
+        width: 230px;
+       font-size : 1.6rem;
+        padding: 20px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+      }
+      #country:hover {box-shadow: 1px 1px 30px black;  }
+      
+      #generate {margin-top:20px;
+      margin-bottom: 40px;
+      margin-left:120px;
+       height:70px;
+        width: 250px;
+       font-size : 1.6rem;
+        padding: 20px;
+        background-color: #8080ff ;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;}
+        
+ #generate:hover {box-shadow: 1px 1px 30px #8080ff;}
+ 
+ .dic{margin-top:15vh;
+margin-left:20px;
+margin-right:20px;
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+font-size: 1.8rem;}</style></head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li class="dropdown"> <a href="#">Tools</a> 
+     <ul class="dropdown-content"> 
+      <li><a href="wordc.html">Word counter </a></li> 
+      <li><a href="scoc.html">SEO Checker </a></li> 
+      <li><a href="chit.html">Text to speech converter</a></li> 
+      <li><a href="Aicod.html">AI Content detector </a></li> 
+      <li><a href="ged.html">Grammar errors detector </a></li> 
+      <li><a href="pc.html"> plagiarism checker</a></li> 
+      <li><a href="formated.html"> image format converter</a></li> 
+      <li><a href="bnfinder.html"> Baby names Finder</a></li> 
+      <li><a href="bng.html"> business name Generator</a></li> 
+     </ul> </li> 
+    <li><a href="contact.html">Contact us</a></li> 
+    <li><a href="termsandc.html">Terms and conditions </a></li> 
+    <li><a href=" privacyandpy.html ">Privacy policy</a></li> 
+    <li><a href="discription.html">Discription</a></li> 
+    <li><a href="disclaimer.html">Disclaimer</a></li> 
+   </ul> 
+  </nav> 
+  <header> 
+   <h1>Baby Names Generator</h1> 
+  </header> 
+  <main class="mn"> 
+   <form> <select id="country"> <option value="select country">Select country</option> <option value="usa">USA</option> <option value="india">India</option> <option value="uk">UK</option><option value="korea">korea</option> </select> 
+    <br> 
+   </form> <button type="button" id="generate">Generate Name</button> 
+   <br> 
+   <div id="result">
+     Baby Names 
+   </div> 
+  </main> 
+  <div class="dic"> 
+   <p>Discover the perfect name for your new arrival with our Baby Names Generator Tool. Our tool offers a vast collection of American names, both male and female, as well as Native American names and Indian names for both boys and girls. Explore the most common Indian names and African American names or find unique and uncommon names with our Indian Name Generator.</p> 
+  </div> 
+  <footer style="background-color: black; color: white; text-align: center; padding: 1rem 0; margin-top: 8vh;"> 
+   <div style="display: flex; flex-wrap: wrap; justify-content: center;"> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="index.html">Home</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="About.html">About us</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="contact.html">Contact us</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="termsandc.html">Terms and Conditions</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="privacyandpy.html">Privacy Policy</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="discription.html">Description</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="disclaimer.html">Disclaimer</a></p> 
+    </div> 
+   </div> 
+   <p style="margin-top: 1rem;">Created by <a style="color: white; text-decoration: none;" href=" https://instagram.com/bhuvnesh_raghav01?igshid=Yzg5MTU1MDY= ">Bhuvnesh Raghav</a></p> 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">const generateButton = document.getElementById("generate");
+const resultDiv = document.getElementById("result");
+const countrySelect = document.getElementById("country");
+
+const usaNames = ["Emma", "Olivia", "Ava", "Isabella", "Sophia", "Mia", "Charlotte", "Amelia", "Harper", "Evelyn", 
+"Abigail", "Emily", "Elizabeth", "Avery", "Sofia", "Ella", "Scarlett", "Madison", "Aubrey", "Aaliyah", 
+"Riley", "Aria", "Adalynn", "Lillian", "Natalie", "Addison", "Mila", "Aurora", "Hazel", "Eleanor", 
+"Hannah", "Lily", "Aubree", "Ellie", "Stella", "Everly", "Nora", "Caroline", "Natalie", "Sarah", 
+"Audrey", "Brooklyn", "Leah", "Allison", "Savannah", "Annabelle", "Aurora", "Makayla", "Ariel", "Genesis", 
+"Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", 
+"Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", 
+"Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", 
+"Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee"
+];
+const indiaNames = ["Aarav", "Advait", "Aryan", "Arjun", "Dhruv", "Kabir", "Rohan", "Siddharth", "Varun", "Vivaan", 
+"Aditya", "Aryan", "Hrithik", "Krishna", "Abhishek", "Raj", "Ranveer", "Salman", "Shahrukh", "Tiger", 
+"Amitabh", "Anil", "Akshay", "Hrithik", "Imran", "Jaimin", "Jay", "Kamal", "Mohan", "Navin", 
+"Om", "Raju", "Sachin", "Sunil", "Vinod", "Yogesh", "Zayed", "Amit", "Arjun", "Chirag", "Deepak", 
+"Gaurav", "Hemant", "Ishaan", "Jasbir", "Karan", "Lalit", "Mukesh", "Nitesh", "Paras", "Ravi", 
+"Sanjeev", "Tarun", "Uday", "Vikram", "Yash", "Zubin", "Alok", "Amit", "Anand", "Ankit", "Ashish", 
+"Bharat", "Chandan", "Dhiren", "Girish", "Hardik", "Ishwar", "Jatin", "Kapil", "Lokesh", "Manoj", 
+"Nitin", "Pankaj", "Rakesh", "Sandeep", "Suresh", "Tushar", "Umesh", "Vijay", "Waqar", "Xavier", 
+"Yogesh", "Zafar"
+];
+const ukNames = ["Oliver", "Harry", "George", "Noah", "Jack", "Leo", "William", "Alfie", "Oscar", "James", 
+"Henry", "Archie", "Charlie", "Ethan", "Jacob", "Max", "Isla", "Emma", "Olivia", "Ava", 
+"Isabelle", "Sophia", "Mia", "Charlotte", "Amelia", "Harper", "Evelyn", "Abigail", "Emily", 
+"Elizabeth", "Avery", "Sofia", "Ella", "Scarlett", "Madison", "Aubrey", "Aaliyah", "Riley", 
+"Aria", "Adalynn", "Lillian", "Natalie", "Addison", "Mila", "Aurora", "Hazel", "Eleanor", 
+"Hannah", "Lily", "Aubree", "Ellie", "Stella", "Everly", "Nora", "Caroline", "Natalie", 
+"Sarah", "Audrey", "Brooklyn", "Leah", "Allison", "Savannah", "Annabelle", "Aurora", "Makayla", 
+"Ariel", "Genesis", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", 
+"Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", 
+"Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee", "Avery", "Evelyn", "Kaylee"
+];
+
+const koreanNames = [ "서연", "서윤", "지우", "서현", "수지", "지아", "유진", "지은", "지윤", "지훈", 
+"예원", "지용", "지호", "서원", "지현", "예진", "지연", "서정", "예준", "지애", 
+"예지", "지언", "서하", "예원", "지원", "지영", "예선", "예진", "지욱", "서영", 
+"서예", "지혜", "지선", "지진", "예서", "지원", "서주", "지유", "예진", "서아", 
+"예준", "지원", "지운", "예선", "예지", "지윤", "지영", "예서", "서우", "지원", 
+"예진", "지아", "지유", "지서", "예원", "서진", "지애", "예준", "지유", "지아", 
+"예진", "서애", "지운", "예준", "지예", "지아", "서유", "예지", "지영", "지애", 
+"서지", "지원", "예준", "지아", "지유", "예진", "지애", "지우", "서영", "예준"
+];
+
+const select=["Please select your country 🙂"];
+
+generateButton.addEventListener("click", function() {
+  const country = countrySelect.value;
+  let names;
+  
+  if (country === "usa") {
+    names = usaNames;
+  } else if (country === "india") {
+    names = indiaNames;
+  } else if (country === "uk") {
+    names = ukNames;
+  }
+  
+  else if (country === "korea"){
+    names = koreanNames;
+  }
+  
+  else if (country ==="select country" ){
+    names = select;
+  }
+  
+  const randomIndex = Math.floor(Math.random() * names.length);
+  const name = names[randomIndex];
+  resultDiv.textContent = name;
+});</script></body></html>

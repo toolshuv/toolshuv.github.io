@@ -1,0 +1,303 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta name="description" content="Easily convert images to various formats with our user-friendly image format converter tool. Supports JPG, PNG, GIF, BMP, TIFF and more. Boost your SEO with targeted keywords."> 
+  <meta name="keywords" content="image format converter, convert images, JPG, PNG, GIF, BMP, TIFF, SEO"> 
+  <title>Image Format Converter</title> 
+  <style>
+    /* Add CSS styles here */
+  </style> 
+ <style type="text/css" id="dcoder_stylesheet">/* Add styles to improve the appearance of the page */
+body {background-color: f2f2f2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+    margin: 10px 10;
+    padding: 30px;
+}
+
+
+#ff{margin:70px;}
+
+label{
+  position: absolute;
+
+left:300px;
+    padding: 10px;
+    background: blue; 
+    display: table;
+    color: white;
+    width:200px;
+    font-size: 30px;
+    font-style : Bold;
+     }
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+.PI
+ {background-color:  #f2f2f2;
+   margin : 20px;
+   height:200px;
+width:200px;
+border: 1px solid #cccccc;
+border-radius:5px;}
+
+
+#preview-image {
+  margin : 0px;
+   height:199px;
+width:199px;
+  max-width: 40%px;
+}
+
+#Conter{ display : absolute;
+width: 40%;
+height: 650px;
+margin-left:200px;
+  margin-top:100px;
+ border-radius: 5px;
+ background-color: white;
+ box-shadow: 0px 0px 15px #404040;}
+ 
+ #format-select{border: 1px solid black;
+ height:40px;
+ width:200px;
+ border-radius: 40px;
+ background: white;
+ padding:10px;
+ margin: 50px;}
+ 
+ 
+ .convert-button{width:200px;
+height: 50px;
+font-size:1.5rem;
+background: #f2f2f2;
+border : none;
+border-radius: 50px; }
+.convert-button:link,
+.convert-button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.convert-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.convert-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.convert-button-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.convert-button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.convert-button-white::after {
+    background-color: #fff;
+}
+
+.convert-button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.convert-button-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .dropdown {
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}</style></head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="#">About</a></li> 
+    <li class="dropdown"> <a href="#">Tools</a> 
+     <ul class="dropdown-content"> 
+      <li><a href="#">Word counter </a></li> 
+      <li><a href="#">SEO Checker </a></li> 
+      <li><a href="#">Text to speech converter</a></li> 
+      <li><a href="#">AI Content detector </a></li> 
+      <li><a href="#">Grammar errors detector </a></li> 
+      <li><a href="#"> plagiarism checker</a></li> 
+     </ul> </li> 
+    <li><a href="#">Contact us</a></li> 
+    <li><a href="#">Terms and conditions </a></li> 
+    <li><a href="#">Privacy policy</a></li> 
+    <li><a href="#">Discription</a></li> 
+    <li><a href="#">Disclaimer</a></li> 
+   </ul> 
+  </nav> 
+  <h1> Free Image Format converter</h1> 
+  <p>Convert your images to any format with our free and user-friendly image format converter tool. Easy to use, fast and reliable, with no limitations on file size. Perfect for optimizing images for SEO and web use.</p> 
+  <div id="Conter"> 
+   <br> 
+   <br> 
+   <div class="PI"> 
+    <img id="preview-image" src="https://www.dreamstime.com/grunge-green-rubber-preview-word-star-icon-round-rubber-seal-stamp-white-background-grunge-green-rubber-preview-word-image139592061 " alt="preview image"> 
+   </div> 
+   <br> 
+   <div id="ff"> <label> Select file <input type="file" id="input-image" placeholder="select image"> </label> 
+   </div> 
+   <br> 
+   <form> 
+    <br> 
+    <br> <select id="format-select"> <option value="select">Select Type</option><option value="jpeg">JPEG</option> <option value="png">PNG</option> <option value="gif">GIF</option> </select> 
+    <br> <button id="convert-button" class="convert-button">Download</button> 
+   </form>
+    <script src="script.js"></script> 
+  </div> 
+  <footer style="background-color: black; color: white; text-align: center; padding: 1rem 0; margin-top: 8vh; "> 
+   <div style="display: flex; flex-wrap: wrap; justify-content: center;"> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="index.html">Home</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">About us</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">Contact us</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="#">Terms and Conditions</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">Privacy Policy</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">Description</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="#">Disclaimer</a></p> 
+    </div> 
+   </div> 
+   <p style="margin-top: 1rem;">Created by <a style="color: white; text-decoration: none;" href=" https://instagram.com/bhuvnesh_raghav01?igshid=Yzg5MTU1MDY= ">Bhuvnesh Raghav</a></p> 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">const inputImage = document.getElementById("input-image");
+const formatSelect = document.getElementById("format-select");
+const previewImage = document.getElementById("preview-image");
+const convertButton = document.getElementById("convert-button");
+
+inputImage.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.onload = function(event) {
+    previewImage.src = event.target.result;
+  };
+  reader.readAsDataURL(inputImage.files[0]);
+});
+
+convertButton.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  const originalImage = inputImage.files[0];
+  const format = formatSelect.value;
+
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  const image = new Image();
+  image.src = previewImage.src;
+  image.onload = function() {
+    canvas.width = image.width;
+    canvas.height = image.height;
+    context.drawImage(image, 0, 0);
+
+    const convertedImage = canvas.toDataURL("image/" + format);
+    const link = document.createElement("a");
+    link.download = "converted-image." + format;
+    link.href = convertedImage;
+    link.click();
+  };
+});
+
+//nav js code</script></body></html>

@@ -1,0 +1,240 @@
+<html> 
+ <head> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Itim&amp;family=Josefin+Sans:wght@500&amp;display=swap" rel="stylesheet"> 
+ <style type="text/css" id="dcoder_stylesheet">#container {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+   background: white;
+  box-shadow: 0px 0px 29px #8c8c8c;
+  border-radius: 3px;
+  height : 40vh;
+}
+
+ h1 {margin-top: 40px;
+ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+textarea {
+  border : none;
+  width: 70%;
+  height: 15vh;
+  font-size: 16px;
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
+select {
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  margin-top: 40px;
+  border: 1px solid black;
+  height: 50px;
+  background-color: #6666ff;
+  width: 30%;
+  font-size: 16px;
+}
+
+button {
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  margin-top: 50px;
+  border : none;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 60px;
+  font-size: 16px;
+}
+
+button:hover
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+{box-shadow: 0px 0px 20px #8c8c8c;}
+
+#output-audio{margin: 40px;
+color: black;}
+
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .dropdown {
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+//dix
+.Dic{
+  margin-top:7vh;
+  text-align: center;
+  padding: 20px;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px black;
+  font-size: 1.4rem;
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+.Note{Color : red;
+font-size: 1.4rem;
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}</style></head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="#">About</a></li> 
+    <li class="dropdown"> <a href="#">Tools</a> 
+     <ul class="dropdown-content"> 
+      <li><a href="#">Word counter </a></li> 
+      <li><a href="#">SEO Checker </a></li> 
+      <li><a href="#">Text to speech converter</a></li> 
+      <li><a href="#">AI Content detector </a></li> 
+      <li><a href="#">Grammar errors detector </a></li> 
+      <li><a href="#"> plagiarism checker</a></li> 
+     </ul> </li> 
+    <li><a href="#">Contact us</a></li> 
+    <li><a href="#">Terms and conditions </a></li> 
+    <li><a href="#">Privacy policy</a></li> 
+    <li><a href="#">Discription</a></li> 
+    <li><a href="#">Disclaimer</a></li> 
+   </ul> 
+  </nav> 
+  <div id="container"> 
+   <div class="Ww"> 
+    <h1>Text-to-Speech Tool</h1> <textarea id="input-text" placeholder="Enter your text hare"></textarea> 
+   </div> 
+   <br> <select id="voice-select"> <option value="">Select voice</option> </select> 
+   <br> 
+   <br> <button id="play-button">Preview</button> <button id="download-button">Download</button> 
+   <br> 
+   <br> 
+   <audio id="output-audio" controls></audio> 
+  </div> 
+  <br> 
+  <div class="Dic"> 
+   <h2>Free text to voice converter</h2> 
+   <p>Transform your written words into natural-sounding speech with our free Text-to-Voice Converter tool. Simply enter your text and select your desired language and voice. Our user-friendly platform uses cutting-edge technology to generate high-quality audio in seconds. Whether for personal or professional use, our tool can help you breathe life into your written content. Try it now and experience the power of voice</p> 
+  </div> 
+  <br> 
+   <hr>
+     <div class="Note">
+       <h3>Note:- We are working on it so that you can download your Audio Latest version coming soon</h3>  
+     </div>
+  <hr> 
+  <footer style="background-color: black; color: white; text-align: center; padding: 1rem 0;"> 
+   <div style="display: flex; flex-wrap: wrap; justify-content: center;"> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="index.html">Home</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">About us</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">Contact us</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="#">Terms and Conditions</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">Privacy Policy</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="#">Description</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="#">Disclaimer</a></p> 
+    </div> 
+   </div> 
+   <p style="margin-top: 1rem;">Created by <a style="color: white; text-decoration: none;" href=" https://instagram.com/bhuvnesh_raghav01?igshid=Yzg5MTU1MDY= ">Bhuvnesh Raghav</a></p> 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">const inputText = document.getElementById('input-text');
+const voiceSelect = document.getElementById('voice-select');
+const playButton = document.getElementById('play-button');
+const downloadButton = document.getElementById('download-button');
+const outputAudio = document.getElementById('output-audio');
+
+let voices = [];
+
+window.speechSynthesis.onvoiceschanged = function() {
+  voices = window.speechSynthesis.getVoices();
+  voices.forEach(voice => {
+    const option = document.createElement('option');
+    option.value = voice.name;
+    option.innerHTML = voice.name;
+    voiceSelect.appendChild(option);
+  });
+};
+
+playButton.addEventListener('click', function() {
+  const utterance = new SpeechSynthesisUtterance(inputText.value);
+  utterance.voice = voices.find(voice => voice.name === voiceSelect.value);
+  window.speechSynthesis.speak(utterance);
+  outputAudio.src = URL.createObjectURL(utterance);
+});
+
+downloadButton.addEventListener('click', function() {
+  // Code to download MP3 file using an API goes here
+});</script></body></html>
