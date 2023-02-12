@@ -1,0 +1,475 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Itim&amp;family=Josefin+Sans:wght@500&amp;display=swap" rel="stylesheet"> 
+  <title>Ava - AI Chatbot</title> 
+ <style type="text/css" id="dcoder_stylesheet">.container {
+  background-image: url('Girls.gif');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
+  z-index: 3;
+ 
+}
+
+    width: 80%;
+    margin: 0 auto;
+   }
+   
+   @media (max-width: 767px) {
+    .container {
+     width: 100%;
+    }
+   }
+   
+.container {
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+  height: 90vh;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 6px 9px 30px black;
+  margin-top: 70px;
+
+}
+
+
+
+      .header {
+       font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-size:1.4rem;
+padding:20px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px black;
+        display: inline-block;
+      }
+      
+      .header h1 {
+      font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+   font-size: 36px;
+        color: #333;
+      }
+      
+      .chat-area {
+        font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-size:1.4rem;
+         height: 500px;
+        overflow-y: scroll;
+      }
+      
+      .chat-box {
+       font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      
+      .chat-box .user-chat {
+       font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+        background-color: #ddd;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px 20px 0 20px;
+        max-width: 80%;
+      }
+      
+      .chat-box .bot-chat {
+        background: transperent;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 20px 20px 20px 0;
+        max-width: 80%;
+      }
+      
+      .input-area {
+        font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      .input-area input[type="text"] {
+    margin-left:40px;
+      height:25px;
+      margin-top: 20vh;
+        font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+        background: transparent;
+        width: 60%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 20px 0 0 20px;
+        border: none;
+        outline: none;
+        border: 2px solid #ddd;
+        box-shadow:3px 5px 10px black;
+       
+       }
+      
+      .input-area button {
+        margin-top:20vh;
+        
+        width: 30%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+     font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+ font-size : 1.8rem;
+        background-color: #8080ff;
+        color: white;
+        border:none;
+      }
+      
+      .input-area button:hover {
+        box-shadow: 1px 1px 30px #8080ff;}
+
+      
+      
+      .listen-btn {
+        font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+        margin : 10px;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      
+.chat-bubble-text{
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  margin-left: 5px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 3px 5px 10px #262626;}
+  
+  .dic{margin-top:20vh;
+margin-left:20px;
+margin-right:20px;
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+font-size: 1.8rem;}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+   font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .dropdown {
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}</style></head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li class="dropdown"> <a href="#">Tools</a> 
+     <ul class="dropdown-content"> 
+      <li><a href="wordc.html">Word counter </a></li> 
+      <li><a href="spllchecker.html">Spelling checker </a></li> 
+      <li><a href="chit.html">Text to speech converter</a></li> 
+      <li><a href="Aicod.html">AI Content detector </a></li> 
+      <li><a href="ged.html">Grammar errors detector </a></li> 
+      <li><a href="pc.html"> plagiarism checker</a></li> 
+      <li><a href="formated.html"> image format converter</a></li> 
+      <li><a href="bnfinder.html"> Baby names Finder</a></li> 
+      <li><a href="bng.html"> business name Generator</a></li> 
+     </ul> </li> 
+    <li><a href="contact.html">Contact us</a></li> 
+    <li><a href="termsandc.html">Terms and conditions </a></li> 
+    <li><a href=" privacyandpy.html ">Privacy policy</a></li> 
+    <li><a href="discription.html">Discription</a></li> 
+    <li><a href="disclaimer.html">Disclaimer</a></li> 
+   </ul> 
+  </nav> 
+  <div class="container"> 
+   <div class="header"> 
+    <h1>Ava - AI Chatbot</h1> 
+   </div> 
+   <div class="chat-area"> 
+    <div class="chat-box bot-chat"> 
+     <p>Hello, I am Ava. How can I help you today?</p> 
+    </div> 
+    <hr> 
+   </div> 
+   <div class="input-area"> 
+    <input type="text" id="userInput" placeholder="Entry your questions hare..."> <button id="submitBtn">Submit</button> 
+   </div> 
+  </div> 
+  <div class="dic"> 
+   <p>"Ava" is an advanced AI chat bot designed to deliver seamless and personalized communication experiences. With natural language processing technology, Ava can understand and respond to user queries with accuracy and efficiency. Whether you need help with customer support, general information, or just someone to talk to, Ava is ready to assist you 24/7. With its friendly interface and intuitive functionality, Ava makes it easy for users to get the information they need, quickly and easily. Upgrade your communication game with Ava, the AI chat bot that's always ready to help.</p> 
+  </div> 
+  <footer style="background-color: black; color: white; text-align: center; padding: 1rem 0; margin-top: 10vh;"> 
+   <div style="display: flex; flex-wrap: wrap; justify-content: center;"> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="index.html">Home</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="About.html">About us</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="contact.html">Contact us</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="termsandc.html">Terms and Conditions</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="privacyandpy.html">Privacy Policy</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="discription.html">Description</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="disclaimer.html">Disclaimer</a></p> 
+    </div> 
+   </div> 
+   <p style="margin-top: 1rem;">Created by <a style="color: white; text-decoration: none;" href=" https://instagram.com/bhuvnesh_raghav01?igshid=Yzg5MTU1MDY= ">Bhuvnesh Raghav</a></p> 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">const submitBtn = document.getElementById("submitBtn");
+  const userInput = document.getElementById("userInput");
+  const chatArea = document.querySelector(".chat-area");
+
+  const questions = [
+    {
+question : "hi",
+answer : "Hi, How are you doing 🙂"
+},
+{
+question : "how are you",
+answer : "i am good, How are you doing 🙂"
+},
+{
+question: "How are you?",
+answer : "i am good, How are you doing 🙂"
+},
+{
+question: "HI",
+answer : "Hi, How are you doing 🙂"
+},
+{
+question: "Hlo",
+answer : "Hi, How are you doing 🙂"
+},
+{
+question:"hlo",
+answer : "Hi, How are you doing 🙂"
+},
+{
+question:"hello",
+answer : "Hi, How are you doing 🙂"
+},
+{
+question: "Hello",
+answer : "Hi, How are you doing 🙂"
+},
+ 
+  {
+    question : "Hi",
+    answer : "Hi, How are you doing 🙂"
+  },
+    {
+      question: "What is your name?",
+      answer: "My name is Ava."
+    },
+    {
+      question: "What is your purpose?",
+      answer: "My purpose is to assist and answer your questions to the best of my ability."
+    },
+    {
+      question: "How old are you?",
+      answer: "I am a AI language model developed by OpenAI, so I don't have an age."
+    },
+    {
+      question: "Where are you located?",
+      answer: "I am a virtual AI, so I do not have a physical location."
+    },
+    {
+      question: "What can you do?",
+      answer: "I can answer a wide range of questions and provide information on various topics. Just ask me anything!"
+    },
+    {
+      question: "What is your favorite color?",
+      answer: "As a AI, I do not have personal preferences like favorites colors, but I can tell you information about colors if you'd like."
+    },
+    {
+      question: "Can you sing a song?",
+      answer: "I'm sorry, but I am not able to sing songs as I am a text-based AI."
+    },
+    {
+      question: "What is your favorite food?",
+      answer: "As a AI, I do not have personal preferences like favorite foods, but I can tell you information about different types of foods if you'd like."
+    },
+    {
+      question: "What is your favorite animal?",
+      answer: "As a AI, I do not have personal preferences like favorite animals, but I can tell you information about different types of animals if you'd like."
+    },
+    {
+      question: "Can you play games?",
+      answer: "I am not able to play games, but I can provide information and trivia about various games if you'd like."
+    },
+    {
+      question: "What is the weather like?",
+      answer: "I'm sorry, but I do not have access to live weather updates. You can check a weather website or app for the most up-to-date information."
+    },
+    {
+      question: "What time is it?",
+      answer: "I'm sorry, but I do not have access to live time updates. You can check the time on your device or a clock."
+    },
+    {
+      question: "Who is the President of the United States?",
+      answer: "I do not have the most up-to-date information on current political leaders as my training data only goes up until 2021. You can check a reliable news source for the most up-to-date information."
+    },
+    {
+      question: "What is your favorite movie?",
+      answer: "As a AI, I do not have personal preferences like favorite movies, but I can tell you information about various movies if you'd like."
+    },
+    {
+      question: "Can you tell me a joke?",
+      answer: "Sure! Why did the tomato turn red? Because it saw the salad dressing!"
+    },
+    {
+      question: "What is the capital of France?",
+            answer: "The capital of France is Paris."
+    },
+    {
+      question: "What is the capital of Japan?",
+      answer: "The capital of Japan is Tokyo."
+    },
+    {
+      question: "What is the largest country by area?",
+      answer: "The largest country by area is Russia."
+    },
+    {
+      question: "What is the population of the world?",
+      answer: "The population of the world is constantly changing, but as of 2021, it is estimated to be around 7.9 billion people."
+    },
+    {
+      question : "Who created you?",
+answer : " Mr. Bhuvnesh Raghav created me."
+    },
+  ];
+
+  submitBtn.addEventListener("click", function() {
+    let userQuestion = userInput.value;
+    let answer = "I'm sorry, I am very dumb right now I'm learning tanks for asking 😊 ";
+
+    for (let i = 0; i < questions.length; i++) {
+      if (userQuestion.toLowerCase() === questions[i].question.toLowerCase()) {
+        answer = questions[i].answer;
+        break;
+      }
+    }
+
+    let chatBubble = document.createElement("div");
+    chatBubble.classList.add("chat-bubble");
+    chatBubble.innerHTML = `
+      <div class="chat-bubble-text-container">
+        <p class="chat-bubble-text">${answer}</p>
+      </div>
+      <button class="listen-btn">Listen</button>
+    `;
+
+    chatArea.appendChild(chatBubble);
+
+    userInput.value = "";
+  });
+
+  chatArea.addEventListener("click", function(e) {
+    if (e.target.classList.contains("listen-btn")) {
+      let speechText = e.target.previousElementSibling.textContent;
+      let speech = new SpeechSynthesisUtterance(speechText);
+      window.speechSynthesis.speak(speech);
+    }
+  });
+  
+  const playSound = () => {
+  const audio = new Audio("tap.mp3");
+  audio.play();
+};
+
+document.querySelector("#submitBtn").addEventListener("click", playSound);</script></body></html>
