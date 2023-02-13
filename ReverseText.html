@@ -1,0 +1,483 @@
+<!doctype html>
+<html> 
+ <head> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Itim&amp;family=Josefin+Sans:wght@500&amp;display=swap" rel="stylesheet"> 
+  <meta charset="utf-8"> 
+  <title>Reverse Text Generator</title> 
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">.container {
+  font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius:5px;
+  box-shadow: 0px 0px 30px #a6a6a6;
+height :70vh;
+width: 80%;
+    margin: 0 auto;
+   }
+   
+   @media (max-width: 767px) {
+    .container {
+     width: 100%;
+    }
+   }
+   
+   h1{font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+     text-align:center;
+     margin:30px;
+   font-size: 2rem;}
+   
+ #text-input{ margin-top:20px;
+ border:none;
+ border-radius:5px;
+ box-shadow:0px 0px 30px #a6a6a6;
+ padding:10px;
+   width: 600px;
+ height:30vh;
+ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+ 
+ #reverse-options{width:300px;
+ height:70px;
+ border:none;
+ border-radius:40px;
+ background: black;
+ color: white;
+ padding:20px;
+ font-size:1.5rem;
+ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+ #reverse-options:hover{box-shadow: 1px 1px 30px black;}
+
+ 
+ .container p{ font-size:2rem;
+ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+ 
+ #reverse-button {width:300px;
+ margin-top:20px;
+ height:70px;
+ border:none;
+ border-radius:40px;
+ color: white;
+ padding:20px;
+ font-size:1.5rem;
+ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+ background-color: #8080ff;}
+ 
+  #reverse-button:hover {box-shadow: 1px 1px 30px #8080ff;}
+
+ 
+ #result{ font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+display: inline-block;
+ padding:20px;
+ border-radius:10px;
+box-shadow: 0px 0px 20px #a6a6a6;
+ }
+ 
+ .dic {margin-top:15vh;
+margin-left:20px;
+margin-right:20px;
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+font-size: 1.8rem;}
+ 
+ //nav
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+   font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .dropdown {
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+//end
+
+</style></head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="About.html">About</a></li> 
+    <li class="dropdown"> <a href="#">Tools</a> 
+     <ul class="dropdown-content"> 
+      <li><a href="wordc.html">Word counter </a></li> 
+      <li><a href="bnfinder.html">baby names generator </a></li> 
+      <li><a href="chit.html">Text to speech converter</a></li> 
+      <li><a href="Avachatbot.html">AI Chat Bot</a></li> 
+      <li><a href="ReverseText.html">Reverse Text Generator</a></li> 
+      <li><a href="formated.html"> image format converter</a></li> 
+     </ul> </li> 
+    <li><a href="contact.html">Contact us</a></li> 
+    <li><a href="termsandc.html">Terms and conditions </a></li> 
+    <li><a href="privacyandpy.html">Privacy policy</a></li> 
+    <li><a href="discription.html">Discription</a></li> 
+    <li><a href="disclaimer.html">Disclaimer</a></li> 
+   </ul> 
+  </nav> 
+  <h1>Reverse Text Generator</h1> 
+  <div class="container"> 
+   <input type="text" id="text-input" placeholder="Enter your text hare"> 
+   <br> 
+   <br> 
+   <p>Choose an option:</p> <select id="reverse-options"><option value="Select">Select</option>" <option value="reverse">Reverse Text</option> <option value="flip">Flip Text</option> <option value="reverse-word">Reverse Wording</option> <option value="flip-word">Flip Wording</option> <option value="reverse-letter">Reverse Each Word's Lettering</option> <option value="upside-down">Upside Down</option> </select> 
+   <br> 
+   <br> <button id="reverse-button">Reverse</button> 
+   <br> 
+   <br> 
+   <p>Result:</p> 
+   <p id="result">results</p> 
+  </div> 
+  <div class="dic">
+  <p>  Discover the ultimate Reverse Text Generator tool, equipped with the latest features to generate reversed text, flipped text, reversed wording, flipped wording, reversed lettering of each word, and even upside down text. This online tool is perfect for anyone who wants to mirror text, generate backward sentences, flip words, or invert the lettering of any text. With just a few clicks, you can use this mirror text converter to reverse font and create a mirrored writing text. Say goodbye to manual backward sentence generation and welcome this backwards text generator that provides the quickest and easiest way to convert your text. Use the online reverse text generator and flip words online tool to reverse text and invert sentences with ease. Transform your text with this reverse letter generator, backwards letters font generator, and inverted letter generator. Get started now and experience the power of this text reverse tool. 
+  </p>
+  </div> 
+  <footer style="background-color: black; color: white; text-align: center; padding: 1rem 0; margin-top: 10vh;"> 
+   <div style="display: flex; flex-wrap: wrap; justify-content: center;"> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="index.html">Home</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="About.html">About us</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="contact.html">Contact us</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="termsandc.html">Terms and Conditions</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="privacyandpy.html">Privacy Policy</a></p> 
+     <p><a style="color: white; text-decoration: none;" href="discription.html">Description</a></p> 
+    </div> 
+    <div style="flex: 1;"> 
+     <p><a style="color: white; text-decoration: none;" href="disclaimer.html">Disclaimer</a></p> 
+    </div> 
+   </div> 
+   <p style="margin-top: 1rem;">Created by <a style="color: white; text-decoration: none;" href=" https://instagram.com/bhuvnesh_raghav01?igshid=Yzg5MTU1MDY= ">Bhuvnesh Raghav</a></p> 
+  </footer> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">const textInput = document.getElementById('text-input');
+const reverseOptions = document.getElementById('reverse-options');
+const reverseButton = document.getElementById('reverse-button');
+const result = document.getElementById('result');
+
+reverseButton.addEventListener('click', function() {
+  let text = textInput.value;
+  let reverseOption = reverseOptions.value;
+
+  switch (reverseOption) {
+    case 'reverse':
+      result.innerHTML = reverseText(text);
+      break;
+    case 'flip':
+      result.innerHTML = flipText(text);
+      break;
+    case 'reverse-word':
+      result.innerHTML = reverseWording(text);
+      break;
+    case 'flip-word':
+      result.innerHTML = flipWording(text);
+      break;
+    case 'reverse-letter':
+      result.innerHTML = reverseLetter(text);
+      break;
+    case 'upside-down':
+      result.innerHTML = upsideDown(text);
+      break;
+  }
+});
+
+function reverseText(text) {
+  return text.split('').reverse().join('');
+}
+
+function flipText(text) {
+  return reverseText(text).split('').map(function(char) {
+    return char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
+  }).join('');
+}
+
+function reverseWording(text) {
+  return text.split(' ').reverse().join(' ');
+}
+
+function flipWording(text) {
+  return text.split(' ').map(function(word) {
+    return reverseText(word);
+  }).join(' ');
+}
+
+function reverseLetter(text) {
+  return text.split(' ').map(function(word) {
+    return word.split('').reverse().join('');
+  }).join(' ');
+}
+
+function upsideDown(text) {
+  let upsideDownText = '';
+  for (let i = 0; i < text.length; i++) {
+    switch (text[i]) {
+      case 'a':
+        upsideDownText += 'ɐ';
+        break;
+      case 'b':
+        upsideDownText += 'q';
+        break;
+      case 'c':
+        upsideDownText += 'ɔ';
+        break;
+      case 'd':
+        upsideDownText += 'p';
+        break;
+      case 'e':
+        upsideDownText += 'ǝ';
+        break;
+      case 'f':
+        upsideDownText += 'ɟ';
+        break;
+      case 'g':
+        upsideDownText += 'ƃ';
+        break;
+      case 'h':
+        upsideDownText += 'ɥ';
+        break;
+      case 'i':
+        upsideDownText += 'ı';
+        break;
+      case 'j':
+        upsideDownText += 'ɾ';
+        break;
+      case 'k':
+        upsideDownText += 'ʞ';
+        break;
+      case 'l':
+        upsideDownText += 'ן';
+        break;
+      case 'm':
+        upsideDownText += 'ɯ';
+        break;
+      case 'n':
+        upsideDownText += 'u';
+        break;
+      case 'o':
+        upsideDownText += 'o';
+        break;
+      case 'p':
+        upsideDownText += 'd';
+        break;
+      case 'q':
+        upsideDownText += 'b';
+        break;
+      case 'r':
+        upsideDownText += 'ɹ';
+        break;
+      case 's':
+        upsideDownText += 's';
+        break;
+      case 't':
+        upsideDownText += 'ʇ';
+        break;
+      case 'u':
+        upsideDownText += 'n';
+        break;
+      case 'v':
+        upsideDownText += 'ʌ';
+        break;
+      case 'w':
+        upsideDownText += 'ʍ';
+        break;
+      case 'x':
+        upsideDownText += 'x';
+        break;
+      case 'y':
+        upsideDownText += 'ʎ';
+        break;
+      case 'z':
+        upsideDownText += 'z';
+        break;
+      case 'A':
+        upsideDownText += '∀';
+        break;
+      case 'B':
+        upsideDownText += 'q';
+        break;
+      case 'C':
+        upsideDownText += 'Ɔ';
+        break;
+      case 'D':
+        upsideDownText += 'p';
+        break;
+      case 'E':
+                upsideDownText += 'Ǝ';
+        break;
+      case 'F':
+        upsideDownText += 'Ⅎ';
+        break;
+      case 'G':
+        upsideDownText += '⅁';
+        break;
+      case 'H':
+        upsideDownText += 'H';
+        break;
+      case 'I':
+        upsideDownText += 'I';
+        break;
+      case 'J':
+        upsideDownText += 'ſ';
+        break;
+      case 'K':
+        upsideDownText += 'ʞ';
+        break;
+      case 'L':
+        upsideDownText += '˥';
+        break;
+      case 'M':
+        upsideDownText += 'W';
+        break;
+      case 'N':
+        upsideDownText += 'N';
+        break;
+      case 'O':
+        upsideDownText += 'O';
+        break;
+      case 'P':
+        upsideDownText += 'Ԁ';
+        break;
+      case 'Q':
+        upsideDownText += 'Q';
+        break;
+      case 'R':
+        upsideDownText += 'Ɐ';
+        break;
+      case 'S':
+        upsideDownText += 'S';
+        break;
+      case 'T':
+        upsideDownText += '⊥';
+        break;
+      case 'U':
+        upsideDownText += '∩';
+        break;
+      case 'V':
+        upsideDownText += 'Λ';
+        break;
+      case 'W':
+        upsideDownText += 'M';
+        break;
+      case 'X':
+        upsideDownText += 'X';
+        break;
+      case 'Y':
+        upsideDownText += '⅄';
+        break;
+      case 'Z':
+        upsideDownText += 'Z';
+        break;
+      default:
+        upsideDownText += text[i];
+        break;
+    }
+  }
+  return upsideDownText;
+}
+
+document.querySelector('#reverseTextButton').addEventListener('click', function() {
+  const input = document.querySelector('#textInput').value;
+  document.querySelector('#output').innerHTML = reverseText(input);
+});
+
+document.querySelector('#flipTextButton').addEventListener('click', function() {
+  const input = document.querySelector('#textInput').value;
+  document.querySelector('#output').innerHTML = flipText(input);
+});
+
+document.querySelector('#reverseWordingButton').addEventListener('click', function() {
+  const input = document.querySelector('#textInput').value;
+  document.querySelector('#output').innerHTML = reverseWording(input);
+});
+
+document.querySelector('#flipWordingButton').addEventListener('click', function() {
+  const input = document.querySelector('#textInput').value;
+  document.querySelector('#output').innerHTML = flipWording(input);
+});
+
+document.querySelector('#reverseLetterButton').addEventListener('click', function() {
+  const input = document.querySelector('#textInput').value;
+  document.querySelector('#output').innerHTML = reverseLetter(input)
+  });
+
+document.querySelector('#upsideDownButton').addEventListener('click', function() {
+  const input = document.querySelector('#textInput').value;
+  document.querySelector('#output').innerHTML = upsideDown(input);
+});</script></body></html>
